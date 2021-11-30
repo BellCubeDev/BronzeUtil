@@ -1,4 +1,5 @@
 Scriptname LSPSpellLearnProgressionCheck Extends ReferenceAlias
+{Main script for the LSPSpellLearnProgressionCheck system}
 
 FormList Property LSPMasterTomesList  Auto
 {An unordered list of all spell tomes supported by the Linear Spell Progression system.
@@ -40,7 +41,7 @@ Only used when SKSE is **not** present!}
 String Property asMessageTextSKSE  Auto
 {Text to display when a spell's requirements are not met
 Unfulfilled requirements are seperated by line breaks and appended to the end of the message.
-Use %s% to indicate where the spell's name should go.}
+The first occurance of %s% will be replaced with the spell's name.}
 
 Actor actorAliasRef
 Bool UseSKSE
